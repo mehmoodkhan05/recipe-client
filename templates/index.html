@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Recipians</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar" class="position-relative">
+            <button type="button" id="sidebarCollapse" class="position-absolute">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </button>
+            <h1><a href="index.html" class="logo text-center">Chefie</a></h1>
+            <div class="sidebar_header-content text-center mt-lg-4">
+                <img src="../assets/images/dp.png" class="img-fluid rounded-pill" id="dp-img" alt="">
+                <p class="text-heading mb-0 mt-3">Mehmood Khan</p>
+                <p class="text-subHeading">Full Stack Developer</p>
+            </div>
+            <ul class="list-unstyled components mt-5 mb-5 justify-content-center">
+                <li class="active mb-3">
+                    <a href="#">
+                        <span class="fa-solid fa-bowl-food mr-2" title="Recipes"></span>
+                        <span class="nav-text">Recipes</span>
+                    </a>
+                </li>
+                <li class="mb-3">
+                    <a href="#">
+                        <span class="fa-solid fa-heart mr-2" title="Favorites"></span>
+                        <span class="nav-text">Favorites</span>
+                    </a>
+                </li>
+                <li class="mb-3">
+                    <a href="#">
+                        <span class="fa-solid fa-clapperboard mr-2" title="Courses"></span>
+                        <span class="nav-text">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa-solid fa-globe mr-2" title="Community"></span>
+                        <span class="nav-text">Community</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="container-fluid p-4 p-md-5">
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <div class="input_search position-relative">
+                        <input type="text" class="form-control position-relative" placeholder="Search Recipes...">
+                        <button class="border-0 bg-transparent position-absolute">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-end">
+                    <div class="right_side-col">
+                        <i class="mr-3">icon</i>
+                        <button>Premium <i class="fa-solid fa-arrow-right ml-1"></i> </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h1>Learn, Cook, & Eat your food</h1>
+                    </div>
+
+                    <div class="left_side-titles mt-3">
+                        <button class="pizza mr-4 rounded-pill">Pizza</button>
+                        <button class="dessert mr-4 rounded-pill">Dessert</button>
+                        <button class="noodle mr-4 rounded-pill">Noodle</button>
+                        <button class="cocktails mr-4 rounded-pill">Cocktails</button>
+                        <button class="salad rounded-pill">Salad</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-end">
+                    <div class="counter_recipe-videos d-flex text-center">
+                        <div class="counter-number mr-3">
+                            <p class="mb-0 counter-header fs-26">120</p>
+                            <p class="counter-subHeading fs-10">Videos</p>
+                        </div>
+                        <div class="counter-text">
+                            <p class="mb-0 counter-header fs-26">201</p>
+                            <p class="counter-subHeading fs-10">Recipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="cards-section" id="cardContainer">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="card text-center" id="cardTemplate">
+                            <img src="../assets/images/dp.png" class="card-img-top m-auto rounded-pill w-50" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Lorem, ipsum dolor.</p>
+                                <hr class="w-100">
+                                <div class="card-bottom d-flex align-items-center">
+                                    <p class="mb-0">20 mins</p>
+                                    <a href="#" class="ml-auto">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card text-center" id="cardTemplate">
+                            <img src="../assets/images/dp.png" class="card-img-top m-auto rounded-pill w-50" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Lorem, ipsum dolor.</p>
+                                <hr class="w-100">
+                                <div class="card-bottom d-flex align-items-center">
+                                    <p class="mb-0">20 mins</p>
+                                    <a href="#" class="ml-auto">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card text-center" id="cardTemplate">
+                            <img src="../assets/images/dp.png" class="card-img-top m-auto rounded-pill w-50" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Lorem, ipsum dolor.</p>
+                                <hr class="w-100">
+                                <div class="card-bottom d-flex align-items-center">
+                                    <p class="mb-0">20 mins</p>
+                                    <a href="#" class="ml-auto">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card text-center" id="cardTemplate">
+                            <img src="../assets/images/dp.png" class="card-img-top m-auto rounded-pill w-50" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Lorem, ipsum dolor.</p>
+                                <hr class="w-100">
+                                <div class="card-bottom d-flex align-items-center">
+                                    <p class="mb-0">20 mins</p>
+                                    <a href="#" class="ml-auto">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

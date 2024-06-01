@@ -1,0 +1,138 @@
+.wrapper #sidebar {
+    background: none;
+}
+
+.wrapper #sidebar ul li {
+    padding: 0 25px;
+}
+
+.wrapper #sidebar ul li a {
+    border: 3px solid #febd2f;
+    border-radius: 10px;
+}
+
+.wrapper #sidebar ul li a:focus {
+    background: #febd2f;
+}
+
+.wrapper #sidebar button {
+    right: -18px;
+    background: transparent;
+    border: 0;
+}
+
+.wrapper #sidebar button i {
+    font-size: 30px;
+    background: linear-gradient(45deg, #f3f2ee 30%, #343a40 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .wrapper #sidebar h1 {
+    margin-top: 25px;
+} */
+
+.wrapper #sidebar h1 a {
+    color: var(--dark);
+}
+
+.wrapper #sidebar .sidebar_header-content img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #febd2f;
+}
+
+.wrapper #sidebar .sidebar_header-content {
+    color: var(--dark);
+}
+
+.wrapper #sidebar ul li a {
+    color: var(--dark);
+}
+
+#content {
+    background: #f3f2ee;
+}
+
+.custom-img {
+    width: 50px;
+    height: 50px;
+}
+
+#content .input_search input {
+    padding: 20px 15px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid #febd2f;
+    caret-color: #febd2f;
+}
+
+#content .input_search input::placeholder {
+    color: #c4c4c4;
+}
+
+#content .input_search input:focus {
+    box-shadow: none;
+}
+
+#content .input_search button {
+    top: 8px;
+    left: 210px;
+}
+
+#content .right_side-col button {
+    width: 108px;
+    border-radius: 5px;
+    background: #febd2f;
+    border: 1px solid #febd2f;
+    padding: 5px 10px;
+}
+
+#content .counter_recipe-videos .counter-header {
+    color: #53c28f;
+}
+
+#content .counter_recipe-videos .counter-subHeading {
+    margin-top: -10px;
+}
+
+#content .left_side-titles button {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #d6d5d1;
+    color: #b4b3b1;
+}
+
+#content .left_side-titles button:focus {
+    background: #0f0f0f;
+    color: #bbbbbb;
+}
+
+#content .left_side-titles .cocktails {
+    width: 95px;
+}
+
+.cards-section {
+    margin-top: 150px;
+}
+
+.cards-section .card {
+    border-radius: 25px;
+}
+
+.cards-section #cardTemplate img {
+    border: 1px solid #febd2f;
+    margin-top: -70px !important;
+}
+
+.cards-section .card .card-bottom a {
+    padding: 6px 15px;
+    border-radius: 10px;
+    background: #e6f9f0;
+    color: #4db98c;
+}
+
+.cards-section .card .card-bottom a:focus {
+    background: #21ba6f;
+    color: #b3edd2;
+}
