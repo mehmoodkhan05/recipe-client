@@ -17,14 +17,14 @@
 </head>
 
 <body>
-    <!-- TOP NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none d-flex">
-        <div class="container-fluid">
+    <!-- TOP NAVBAR M<OBILE VIEW -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-lg-none d-flex mb-0 fixed-top">
+        <div class="container">
             <a class="navbar-brand" href="#">Chefie</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars-staggered"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -32,27 +32,25 @@
                         <a class="nav-link active" aria-current="page" href="#">Recipes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Favorites</a>
+                        <a class="nav-link active" href="#">Favorites</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Courses</a>
+                        <a href="#" class="nav-link active">Courses</a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <span class="nav-text">Community</span>
-                        </a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Community</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- TOP NAVBAR -->
+    <!-- TOP NAVBAR M<OBILE VIEW -->
 
     <div class="wrapper d-flex">
         <!-- SIDEBAR NAVBAR -->
-        <nav id="sidebar" class="position-relative d-none d-md-block">
+        <nav id="sidebar" class="position-relative d-none d-lg-block">
             <button type="button" id="sidebarCollapse" class="position-absolute">
-                <i class="fa fa-bars"></i>
+                <i class="fa-solid fa-bars-staggered"></i>
                 <span class="sr-only">Toggle Menu</span>
             </button>
             <h1><a href="index.html" class="logo text-center">Chefie</a></h1>
@@ -90,9 +88,10 @@
         </nav>
         <!-- SIDEBAR NAVBAR -->
 
+        <!-- MAIN CONTENT -->
         <div id="content" class="container-fluid p-4 p-md-5">
             <div class="row mb-5">
-                <div class="col-12 d-flex align-items-center">
+                <div class="col-12 d-flex align-items-center left_side-col">
                     <div class="input_search position-relative">
                         <input type="text" class="form-control position-relative" placeholder="Search Recipes...">
                         <button class="border-0 bg-transparent position-absolute">
@@ -138,7 +137,7 @@
 
             <section class="cards-section" id="cardContainer">
                 <div class="row justify-content-center">
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 mt-5 mt-sm-0">
                         <div class="card text-center" id="cardTemplate">
                             <img src="../assets/images/image.jpg" class="card-img-top m-auto rounded-pill" alt="...">
                             <div class="card-body">
@@ -160,7 +159,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 mt-5 mt-sm-0">
                         <div class="card text-center" id="cardTemplate">
                             <img src="../assets/images/image.jpg" class="card-img-top m-auto rounded-pill" alt="...">
                             <div class="card-body">
@@ -182,7 +181,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-sm-6 mt-xl-0 mt-md-5">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-5">
                         <div class="card text-center" id="cardTemplate">
                             <img src="../assets/images/image.jpg" class="card-img-top m-auto rounded-pill" alt="...">
                             <div class="card-body">
@@ -204,7 +203,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-4 col-sm-6 mt-xl-0 mt-md-5">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 mt-xl-0 mt-sm-5 mt-5">
                         <div class="card text-center" id="cardTemplate">
                             <img src="../assets/images/image.jpg" class="card-img-top m-auto rounded-pill" alt="...">
                             <div class="card-body">
@@ -230,25 +229,25 @@
 
             <section class="bottom-section">
                 <div class="row position-relative">
-                    <div class="col-lg-9 col-12 bottom_section-left_side order-2 order-lg-1">
+                    <div class="col-xl-9 col-lg-12 bottom_section-left_side order-2 order-xl-1">
                         <div class="card mb-3 left_side-card">
                             <div class="row g-0">
-                                <div class="col-md-3 d-flex align-items-center">
+                                <div class="col-md-3 col-12 d-flex align-items-center justify-content-center">
                                     <img src="../assets/images/image.jpg" class="rounded-pill" alt="...">
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-8 col-12">
                                     <div class="card-body">
                                         <h1 class="card-title">Instant Pot Greek <br> Chicken Bowls</h1>
                                         <p class="card-text pt-3">The flavours of the Mediterranean are cooked up in 30
                                             minutes in an Instant Pot for a quickand filling, souvlaki-inspired
                                             weeknight dinner.
                                         </p>
-                                        <div class="card-text d-flex pt-3">
-                                            <p>
+                                        <div class="card-text d-block d-sm-flex pt-3">
+                                            <p class="align-items-center">
                                                 <i class="fa-solid fa-people-group mr-1"></i>
                                                 <span>Serving - 4</span>
                                             </p>
-                                            <p class="m-auto">
+                                            <p class="ml-auto">
                                                 <i class="fa-solid fa-calendar-week mr-1"></i>
                                                 <span>Cook Time - 1 hour 20 min</span>
                                             </p>
@@ -265,14 +264,15 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-7 bottom_section-right_side position-lg-absolute order-1 order-lg-2">
-                        <div class="row ">
+                    <div
+                        class="col-xl-3 col-lg-10 d-none d-xl-block bottom_section-right_side position-lg-absolute order-1 order-xl-2 justify-content-center justify-content-sm-start">
+                        <div class="row">
                             <div class="card mb-3 right_side_top-card">
                                 <div class="row g-0">
-                                    <div class="col-md-4 d-flex align-items-center">
+                                    <div class="col-md-4 col-12 d-flex align-items-center image justify-content-center">
                                         <img src="../assets/images/image.jpg" class="rounded-pill" alt="...">
                                     </div>
-                                    <div class=" col-md-8">
+                                    <div class=" col-md-8 col-12">
                                         <div class="card-body">
                                             <h5 class="card-title">Noodle Chicken</h5>
                                             <p class="card-text">
@@ -295,13 +295,13 @@
                             </div>
                         </div>
 
-                        <div class="row ">
+                        <div class="row">
                             <div class="card mb-3 right_side_bottom-card">
                                 <div class="row g-0">
-                                    <div class="col-md-4 d-flex align-items-center">
+                                    <div class="col-md-4 col-12 d-flex align-items-center justify-content-center">
                                         <img src="../assets/images/image.jpg" class="rounded-pill" alt="...">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 col-12">
                                         <div class="card-body">
                                             <h5 class="card-title text-white">Chicken with green</h5>
                                             <p class="card-text">
@@ -327,6 +327,7 @@
                 </div>
             </section>
         </div>
+        <!-- MAIN CONTENT -->
     </div>
 
     <script src="../js/jquery.min.js"></script>

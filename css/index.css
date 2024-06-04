@@ -68,7 +68,6 @@ body {
 }
 
 #content {
-    /* margin-right: 250px; */
     background: #f3f2ee;
 }
 
@@ -177,7 +176,7 @@ body {
 
 .left_side-card img {
     width: 200px;
-    margin-left: -40px;
+    margin-left: -110px;
     box-shadow: 15px 0 15px #dfd1be;
 }
 
@@ -191,12 +190,13 @@ body {
 
 .bottom_section-right_side .right_side_top-card,
 .right_side_bottom-card {
+    padding: 8px 0;
     border-radius: 30px;
 }
 
 .bottom_section-right_side .right_side_top-card img,
 .right_side_bottom-card img {
-    margin-left: -30px;
+    margin-left: -40px;
     width: 120px;
 }
 
@@ -222,7 +222,7 @@ body {
 }
 
 .bottom_section-right_side {
-    right: -80px;
+    right: -50px;
 }
 
 .right_side_top-card img {
@@ -232,6 +232,10 @@ body {
 @media screen and (width<=1399px) {
     .cards-section #cardTemplate img {
         width: 180px;
+    }
+
+    .left_side-card img {
+        margin-right: -80px;
     }
 }
 
@@ -247,8 +251,100 @@ body {
     }
 }
 
-@media screen and (width<= 768px) {
-    .bottom_section-right_side {
-        /* right: -375px; */
+@media screen and (width<=991px) {
+    #content {
+        margin-top: 78px;
+    }
+
+    #content #cardContainer {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (width<=767px) {
+    .left_side-card .card-title {
+        text-align: center;
+    }
+}
+
+@media screen and (width<=640px) and (width>=574px) {
+    .counter_recipe-videos {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (width<=575px) {
+    #content #cardContainer {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (width<=573px) {
+    .left_side-titles .salad {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (width<=500px) {
+    #content .input_search input {
+        width: 200px;
+    }
+
+    #content .input_search button {
+        left: 165px;
+    }
+}
+
+@media screen and (width<=428px) {
+    .bottom-section .left_side-card .card-title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (width<=424px) {
+    #content .section-heading h1 {
+        font-size: 32px;
+    }
+
+    #content .input_search input {
+        width: 250px;
+        margin: auto;
+    }
+
+    #content .input_search {
+        margin: auto;
+    }
+
+    #content .input_search button {
+        right: -25px;
+    }
+
+    #content .left_side-col {
+        display: block !important;
+    }
+
+    #content .right_side-col {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (width<=361px) {
+    .bottom-section .left_side-card .card-title {
+        font-size: 26px;
+    }
+}
+
+@media screen and (width<=358px) {
+
+    .left_side-titles .noodle,
+    .cocktails {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (width<=329px) {
+    #content .section-heading h1 {
+        font-size: 28px;
     }
 }
